@@ -16,7 +16,7 @@ const EditMovie = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3001/api/movie/${id}`);
+      const response = await axios.get(`https://movieapp-be.onrender.com/api/movie/${id}`);
       setEditMovie(response.data.message);
     } catch (error) {
       console.log(error.message);
@@ -31,7 +31,7 @@ const EditMovie = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3001/api/movie/${id}`, editMovie);
+      await axios.put(`https://movieapp-be.onrender.com/api/movie/${id}`, editMovie);
       alert("Movie Update Successfully");
       navigate("/");
     } catch (error) {

@@ -12,7 +12,7 @@ const SearchBar = ({movie,setMovie, handleDelete}) => {
     },[])
 
     const fetchData = async() =>{
-        const response = await axios.get("http://localhost:3001/api/movie/getAllMovies")
+        const response = await axios.get("https://movieapp-be.onrender.com/api/movie/getAllMovies")
         setMovie(response.data.message)
     }
 

@@ -18,7 +18,7 @@ const DisplayMovie = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3001/api/movie/getAllMovies"
+        "https://movieapp-be.onrender.com/api/movie/getAllMovies"
       );
       setMovie(response.data.message);
     } catch (error) {
@@ -28,7 +28,7 @@ const DisplayMovie = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3001/api/movie/${id}`);
+      await axios.delete(`https://movieapp-be.onrender.com/api/movie/${id}`);
       alert("Movie Deleted SuccessFully");
       setDeleteMovie((preData) => preData.filter((item) => item.id !== id));
     } catch (error) {
@@ -45,7 +45,7 @@ const DisplayMovie = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3001/api/movie/create",
+        "https://movieapp-be.onrender.com/api/movie/create",
         newMovie
       );
 
