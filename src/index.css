@@ -1,0 +1,5 @@
+.card:hover{
+    cursor: pointer;
+    scale: 1.1;
+    border: 3px solid yellow;
+}
