@@ -68,7 +68,7 @@ const DisplayMovie = () => {
           className="d-flex justify-content-center gap-5"
           onSubmit={handleFormSubmit}
         >
-          <div className="col-auto">
+          <div className="col-sm-auto">
             <input
               type="text"
               className="form-control"
@@ -81,7 +81,7 @@ const DisplayMovie = () => {
            <span className="text-danger mt-3">{error}</span> 
           </div>
 
-          <div className="col-auto">
+          <div className="col-sm-auto">
             <input
               type="text"
               className="form-control"
@@ -93,7 +93,7 @@ const DisplayMovie = () => {
             />
           </div>
           
-          <div className="col-auto">
+          <div className="col-sm-auto">
             <button type="submit" className="btn btn-outline-success">
               Add Movie
             </button>
